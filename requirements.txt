@@ -3,3 +3,6 @@ numpy
 toml
 matplotlib
 click
+anytree
+scipy
+tomli

@@ -1,0 +1,21 @@
+[calibration]
+# Intrinsic 캘리브레이션 이미지 경로 패턴
+intrinsic_folder_cam01 = "F:/pose-2-action/data/calibration/intrinsics/cam01/*.jpg"
+intrinsic_folder_cam02 = "F:/pose-2-action/data/calibration/intrinsics/cam02/*.jpg"
+
+# Extrinsic (스테레오) 캘리브레이션 이미지 경로 패턴
+extrinsic_folder_cam01 = "F:/pose-2-action/data/calibration/extrinsics/cam01/*.jpg"
+extrinsic_folder_cam02 = "F:/pose-2-action/data/calibration/extrinsics/cam02/*.jpg"
+
+# 체커보드 설정 (intrinsics)
+checkerboard_rows = 6
+checkerboard_columns = 8
+checkerboard_size = 60  # 단위: mm
+
+# 체커보드 설정 (extrinsics, 스테레오 캘리브레이션)
+stereo_checkerboard_rows = 3
+stereo_checkerboard_columns = 5
+stereo_checkerboard_size = 140
+
+# 캘리브레이션 결과 출력 폴더
+output_dir = "F:/pose-2-action/output/calibration"
