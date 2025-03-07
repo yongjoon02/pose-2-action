@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 def main():
     # config.toml 파일 로드
-    config_path = r"F:\pose-2-action\config.toml"
+    config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../config.toml")
     if not os.path.exists(config_path):
         raise FileNotFoundError(f"[ERROR] config 파일 {config_path}을(를) 찾을 수 없습니다.")
     config = toml.load(config_path)
