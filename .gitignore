@@ -1,0 +1,7 @@
+# Python 캐시 디렉터리
+__pycache__/
+*.pyc
+*.pyo
+
+# ptcache 파일
+*.ptcache
