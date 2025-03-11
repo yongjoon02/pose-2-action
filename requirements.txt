@@ -6,3 +6,4 @@ click
 anytree
 scipy
 tomli
+ultralytics

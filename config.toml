@@ -1,11 +1,11 @@
 [calibration]
 # Intrinsic 캘리브레이션 이미지 경로 패턴
-intrinsic_folder_cam01 = "F:/pose-2-action/data/calibration/intrinsics/cam01/*.jpg"
-intrinsic_folder_cam02 = "F:/pose-2-action/data/calibration/intrinsics/cam02/*.jpg"
+intrinsic_folder_cam01 = "data/calibration/intrinsics/cam01/*.jpg"
+intrinsic_folder_cam02 = "data/calibration/intrinsics/cam02/*.jpg"
 
 # Extrinsic (스테레오) 캘리브레이션 이미지 경로 패턴
-extrinsic_folder_cam01 = "F:/pose-2-action/data/calibration/extrinsics/cam01/*.jpg"
-extrinsic_folder_cam02 = "F:/pose-2-action/data/calibration/extrinsics/cam02/*.jpg"
+extrinsic_folder_cam01 = "data/calibration/extrinsics/cam01/*.jpg"
+extrinsic_folder_cam02 = "data/calibration/extrinsics/cam02/*.jpg"
 
 # 체커보드 설정 (intrinsics)
 checkerboard_rows = 6
@@ -18,4 +18,15 @@ stereo_checkerboard_columns = 5
 stereo_checkerboard_size = 140
 
 # 캘리브레이션 결과 출력 폴더
-output_dir = "F:/pose-2-action/output/calibration"
+output_dir = "output/calibration"
+
+[pose_estimation]
+video1 = "data/pose_estimation/cam1/Thread-1_2025-02-20_09-31-18.mp4"
+video2 = "data/pose_estimation/cam2/Thread-2_2025-02-20_09-31-18.mp4"
+model_path = "data/pose_estimation/yolo.pt"
+result_folder_base = "output/pose_estimation/"
+
+[triangulation]
+json_folder_cam1 = "output/pose_estimation/result/cam1_json/*.json"
+json_folder_cam2 = "output/pose_estimation/result/cam2_json/*.json"
+output_3d_json = "output/triangulation/3d_pose.json"
