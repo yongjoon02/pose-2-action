@@ -7,3 +7,4 @@ anytree
 scipy
 tomli
 ultralytics
+toml
